@@ -43,9 +43,9 @@ jobs:
           toolchain: ${{ matrix.toolchain }}
           components: clippy
       - name: cargo clippy
-        uses: actions-rs/clippy-check@v1
+        uses: clechasseur/rs-clippy-check@v3
         with:
-          token: ${{ secrets.GITHUB_TOKEN }}
+          toolchain: ${{ matrix.toolchain }}
   doc:
     runs-on: ubuntu-latest
     name: nightly / doc
