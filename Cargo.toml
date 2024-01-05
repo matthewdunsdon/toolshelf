@@ -1,0 +1,5 @@
+[workspace]
+members = [
+    "toolshelf_rss"
+]
+resolver = "2"
